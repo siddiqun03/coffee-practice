@@ -1,1 +1,19 @@
 //Shu yerga bizning fontlar keladi!
+/* lexend-regular - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-v7-latin-regular.woff2") format("woff2"),
+    url("../fonts/lexend-v7-latin-regular.woff") format("woff"),
+    url("../fonts/lexend-v7-latin-regular.ttf") format("truetype");
+}
+/* lexend-500 - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/lexend-v7-latin-500.woff2") format("woff2"),
+    url("../fonts/lexend-v7-latin-500.woff") format("woff"),
+    url("../fonts/lexend-v7-latin-500.ttf") format("truetype");
+}

@@ -1,0 +1,42 @@
+.feedback {
+  padding: 100px 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background: url("../../images/Avatar.png");
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+  }
+  &__right {
+    width: 100%;
+    max-width: 653px;
+  }
+  &__blokquote {
+    margin: 0;
+    margin-top: 49px;
+    margin-bottom: 43px;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.177778px;
+    color: #1b1d21;
+  }
+  &__customer {
+    width: 100%;
+    max-width: 448px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-name {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 27px;
+      color: #1b1d21;
+    }
+  }
+  &__slide {
+    margin-left: auto;
+  }
+}

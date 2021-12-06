@@ -341,6 +341,22 @@ template {
   display: none;
 }
 
+/* lexend-regular - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-v7-latin-regular.woff2") format("woff2"), url("../fonts/lexend-v7-latin-regular.woff") format("woff"), url("../fonts/lexend-v7-latin-regular.ttf") format("truetype");
+}
+
+/* lexend-500 - latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/lexend-v7-latin-500.woff2") format("woff2"), url("../fonts/lexend-v7-latin-500.woff") format("woff"), url("../fonts/lexend-v7-latin-500.ttf") format("truetype");
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -364,7 +380,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Lexend", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -388,7 +404,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1157px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -397,5 +413,254 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.question {
+  background-color: #fafafa;
+}
+
+.question__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.question__top {
+  max-width: 653px;
+  margin-bottom: 56px;
+}
+
+.question__heading {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 16px;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: 0.175px;
+  color: #1f2132;
+}
+
+.question__desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #6b6867;
+}
+
+.question__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -31px;
+}
+
+.question__select {
+  max-width: 517px;
+  margin-left: 31px;
+  margin-bottom: 20px;
+  padding: 18px 20px;
+}
+
+.question__option {
+  padding: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1b1d21;
+}
+
+.feedback {
+  padding: 100px 0;
+}
+
+.feedback__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  background: url("../../images/Avatar.png");
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+.feedback__right {
+  width: 100%;
+  max-width: 653px;
+}
+
+.feedback__blokquote {
+  margin: 0;
+  margin-top: 49px;
+  margin-bottom: 43px;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.177778px;
+  color: #1b1d21;
+}
+
+.feedback__customer {
+  width: 100%;
+  max-width: 448px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback__customer-name {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #1b1d21;
+}
+
+.feedback__slide {
+  margin-left: auto;
+}
+
+.footer {
+  background-color: #007e5b;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 61px 20px;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 36px;
+  width: 100%;
+  max-width: 592px;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.footer__form {
+  margin-bottom: 64px;
+}
+
+.footer__label {
+  position: relative;
+}
+
+.footer__input {
+  padding: 25px 319px 25px 48px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8d8e90;
+}
+
+.footer__sms {
+  position: absolute;
+  left: 15px;
+  top: -3px;
+}
+
+.footer__button {
+  position: absolute;
+  left: 380px;
+  top: -20px;
+  padding: 18px 36px;
+  border: none;
+  background-color: #f9bf62;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #141a50;
+}
+
+.footer__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding-top: 64px;
+  border-top: 2px solid white;
+}
+
+.footer__item + .footer__item {
+  margin-left: 56px;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
